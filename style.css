@@ -1,0 +1,225 @@
+body{
+ overflow-x: hidden;
+}
+#navbar{
+  background-color: rgba(5, 210, 5, 0.824);
+}
+#navbar1{
+  background-color: transparent;
+  backdrop-filter: blur(10px);
+  box-shadow: 10p 10px 30px rgb(255, 255, 255) inset;
+}
+  #navbar i{
+   display: none;
+  }
+  #navbar a{
+   animation: fadeIn .7s ease-in-out;
+   padding-left: 20px;
+   color: aliceblue;
+   transition: color .7s ease-in;
+  }
+  #navbar a:hover{
+    color: black;
+  }
+  #navbar ul{
+    padding-right: 50px;
+    font-size: 20px;
+  }
+  .carousel {
+   position: relative;
+   width: 100%;
+   overflow: hidden;
+  }
+  .carousel-inner {
+   display: flex;
+   transition: transform 0.5s ease;
+   width: 300%;
+  }
+  .carousel-item {
+   min-width: 100%;
+   box-sizing: border-box;
+  }
+  .carousel-item img {
+   width: 34%;
+   height: 85vh;
+  }
+  #welcome-section h1{
+   text-shadow: 5px 5px 10px #000000;
+  }
+  #welcome-section p{
+   text-shadow: 5px 5px 10px #000000;
+  }
+  #ul li{
+   text-decoration: none;
+   color:aliceblue;
+   animation: fadeIn 2s;
+   font-size: 1.1em;
+   font-family: Dubai;
+   padding-right: 10px;
+   position: relative;
+  }
+  #ul li::after{
+   content: '';
+   right: 13px;
+   bottom: 1px;
+   position: absolute;
+   width: 65%;
+   height: 2.5px;
+   background: rgb(10, 13, 203);
+   transform-origin: right;
+   border-radius: 5px;
+   transform: scaleX(0);
+   transition: transform .5s;
+  }   
+  #ul li:hover::after{
+    color:rgb(10, 13, 203);
+   transform-origin: left;
+   transform: scaleX(1);
+  }
+  #aboutusimage{
+    display: flex;
+  }
+  #query1{
+    padding-left: 620px;
+    margin-bottom: 15px;
+   }
+  @media only screen and (max-width: 768px){
+      #navbar ul{
+        padding-right: 0px;
+        font-size: 16px;
+      }
+    #ul {
+    display: none;
+    padding-right: 5px;
+    width: 38%;
+    animation-duration: 0.5s;
+   }
+   #ul.slide-in {
+    display: block;
+    animation-name: slideIn .5s ease-in;
+   } 
+   #ul.slide-out {
+    display: block;
+    animation-name: slideOut .5s ease-in;
+   }
+   .carousel-item img {
+    width: 34%;
+    height: 65vh;
+    opacity: 80%;
+   }
+   #query1{
+    padding-left: 27px;
+    margin-bottom: 0;
+   }
+   #welcome-section{
+    height: 65vh;
+   }
+   #aboutusimage{
+    display: block;
+  }
+  #abtimg1, #abtimg3{
+    display: none;
+  }
+  #abtimg2{
+    padding: 0;
+    margin:0;
+  }
+   #hero{
+    height: 65vh;
+   }
+   footer{
+    display: block;
+   }
+   .footer-links{
+    display: block;
+   }
+   .footer-links1{
+    width: 200px;
+   }
+   .footer-links2{
+    display: none;
+   }
+   .footer-links3{
+    display: block;
+   }
+   #copyright{
+    display: block;
+    font-size: 13.1px;
+   }
+  }
+  .whatsapp-icon {
+   position: fixed;
+   bottom: 20px;
+   right: 20px;
+   width: 50px;
+   height: 50px;
+   background-color: #25D366;
+   border-radius: 50%;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+  }
+  .whatsapp-icon img {
+   width: 30px;
+   height: 30px;
+  }
+  .footer-links {
+   display: flex;
+   justify-content: space-around;
+   padding: 20px;
+   background-color: blue 100;
+   color: white;
+  }
+  .footer-links ul li:hover {
+   color: #212e3c;
+  }
+  .footer-info {
+   padding: 20px;
+   background-color:blue 100;
+   color: white;
+  }
+  .footer-social {
+   display: flex;
+   justify-content: space-around;
+   align-items: center;
+   padding: 20px;
+   background-color: blue 100;
+  }
+  .footer-social a {
+   color: white;
+   text-decoration: none;
+   transition: color 0.3s ease;
+   padding-left: 3px;
+   font-size:25px;
+  }
+  .footer-social a:hover {
+   color: #212e3c;
+  }
+  .footer-links3{
+   display: none;
+  }
+  @keyframes slideOut {
+   from {
+    transform: translateX(-80%);
+   }
+   to {
+    transform: translateX(0);
+   }
+  }
+  @keyframes slideIn {
+   from {
+    transform: translateX(0);
+   }
+   to {
+    transform: translateX(-100%);
+   }
+  }
+  @keyframes fadeIn{
+   from{
+    opacity: 0;
+   }
+   to{
+    opacity: 100;
+   }
+  }
